@@ -36,7 +36,6 @@ def count_elements(elem)
   full = []
   elem.each do |data|
     count_hash = {:count => data.count}
-     #binding.pry
     full << count_hash.merge(data)
   end
    binding.pry
