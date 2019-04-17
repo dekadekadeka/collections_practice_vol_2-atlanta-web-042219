@@ -33,13 +33,15 @@ def remove_non_strings(elem)
 end
 
 def count_elements(elem)
-  full = []
   elem.each do |data|
-    count_hash = {:count => data.count}
-    full << count_hash.merge(data)
-  end
-   binding.pry
-  full
+    data[:count] = 0
+    name = data[:name]
+    elem.each do |hash|
+      if hash[:name] == name
+        data[:count] += 1
+      end
+    end
+  end.uniq
 end
 
 def merge_data(keys, data)
