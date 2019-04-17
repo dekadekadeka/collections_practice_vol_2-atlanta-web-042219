@@ -40,7 +40,7 @@ def count_elements(elem)
   #    #binding.pry
   #   full << count_hash.merge(data)
   # end
-  # binding.pry
+   binding.pry
   full
 end
 
